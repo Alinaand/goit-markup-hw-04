@@ -14,6 +14,7 @@ box-sizing: inherit;
 
   --main-text-cl: #212121;
   --secondary-text-cl: #757575;
+  --social-icons: #AFB1B8;
   --accent-cl: #2196f3;
   --alt-text-cl: #ffffff;
 
@@ -126,7 +127,17 @@ a span{
     display: block;
     
   }
-   
+  .address-icon-envelope {
+    width: 16px;
+    height: 12px;
+    stroke:var(--secondary-text-cl);
+  }
+  .address-icon-smartphone {
+    width: 10px;
+    height: 16px;
+  stroke:var(--secondary-text-cl);
+  }
+  
   /*li .menu-item :nth-child(2n + 3) {
     margin-right: 0;
       }
@@ -241,8 +252,29 @@ min-height: 50px;
   justify-items: center;
   margin-right: -30px;
  
-  
 }
+.feature-card-icon{
+padding: 25px 102px;
+background-color: var(--section-bg);
+border-radius: 4px;
+margin-bottom: 30px;
+}
+.feature-icon{
+width: 65px;
+height: 70px;
+}
+/*
+.feature-card::before {
+  content: "";
+  width: 270px;
+  height: 120px;background-image: url("../icons/antenna.svg");
+  background-repeat: no-repeat;
+  display: inline-flex;
+background-position: center;
+background-color: var(--secondary-text-cl);
+} */
+
+
 .feature-card {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-right: 30px;
@@ -316,7 +348,7 @@ letter-spacing: 0.03em;
 
 .team-card-text{
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -325,8 +357,43 @@ letter-spacing: 0.03em;
   color: var(--secondary-text-cl);
 }
 .team-unit {
+
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons-item{
+  margin-right: 10px;
+}
+.social-icons-item:last-child{
+  margin-right: 0;
+}
+.social-icons-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:var(--section-bg);
+}
+.social-icons-link:hover {
+  background-color:var(--accent-cl);
+ 
+
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icons);
+}
+.social-icons-link:hover .social-icons-svg {
+  fill: var(--alt-text-cl);
 }
  .portfolio-projects img {
   display: block;
