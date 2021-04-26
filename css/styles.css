@@ -404,9 +404,16 @@ letter-spacing: 0.03em;
 .social-icons-link:hover .social-icons-svg {
   fill: var(--alt-text-cl);
 }
-
+.clients {
+  display: flex;
+}
+.clients-list link{
+  display: block;
+}
 .clients-item {
-
+ width: 170px;
+height: 82px;
+margin-right: 30px;
 }
 .clients-list{
   display: flex;
@@ -531,6 +538,49 @@ color: rgba(255, 255, 255, 0.6);
 .dark-bg .btn:focus{
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);  
+}
+.footer-social-links{
+ display: flex; 
+}
+.footer-slogan {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+}
+.social-icons-item{
+  margin-right: 10px;
+}
+.social-icons-item:last-child{
+  margin-right: 0;
+}
+.social-icons-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.social-icons-link:hover {
+  background-color:var(--accent-cl);
+ 
+
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icons);
+}
+.social-icons-link:hover .social-icons-svg {
+  fill: var(--alt-text-cl);
 }
 /*
 .menu-item:hover .menu-item {
