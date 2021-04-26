@@ -117,26 +117,35 @@ a span{
   }
 
   .contacts-item {
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    align-items: center;
   }
   .contacts. link {
     display: block;
     
   }
   .address-icon-envelope {
+    
     width: 16px;
     height: 12px;
-    stroke:var(--secondary-text-cl);
+   margin-right: 10px;
+   fill: currentColor;
+  
+   
+    
   }
   .address-icon-smartphone {
     width: 10px;
     height: 16px;
-  stroke:var(--secondary-text-cl);
+    margin-right: 10px;
+    fill: currentColor;
   }
+  
   
   /*li .menu-item :nth-child(2n + 3) {
     margin-right: 0;
@@ -394,6 +403,13 @@ letter-spacing: 0.03em;
 }
 .social-icons-link:hover .social-icons-svg {
   fill: var(--alt-text-cl);
+}
+
+.clients-item {
+
+}
+.clients-list{
+  display: flex;
 }
  .portfolio-projects img {
   display: block;
