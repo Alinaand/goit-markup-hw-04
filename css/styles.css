@@ -495,15 +495,20 @@ letter-spacing: 0.03em;
 color:var(--secondary-text-cl);
 margin-bottom: 0;
 }
-.footer-section{
-  display: flex;
+.footer-section {
+  
   padding-bottom: 60px;
   padding-top: 60px;
   color:var(--alt-text-cl);
   background-color:var(--dark-bg);
 }
+/*.footer-address {
+  display: flex;
+  flex-direction: column;
+
+}*/
 .logo-footer {
-display: block;
+
 margin-bottom: 20px;
 }
 .address {
@@ -540,8 +545,9 @@ color: rgba(255, 255, 255, 0.6);
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);  
 }
-.footer-social-links{
+.footer-social-links {
  display: flex; 
+
 }
 .footer-slogan {
 font-weight: bold;
@@ -550,9 +556,9 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
-.social-icons-footer {
+.social-icons-list {
   display: flex;
-  justify-content: center;
+ 
 }
 .social-icons-item{
   margin-right: 10px;
