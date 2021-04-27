@@ -176,9 +176,16 @@ a span{
   min-height: 600px;
   padding-top: 200px;
 padding-bottom: 200px;
+background-image: url(../images/Img.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
   }
-
+  /*.poster {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}*/
 .page-title{
 margin: 0 auto;
 padding-bottom: 30px;
@@ -431,8 +438,13 @@ fill: var(--accent-cl);
   height: 60px;
   align-items: center;
 }
-.clients-card:hover {
+.clients-card:hover .clients-item-svg,
+.clients-card:focus .clients-item-svg {
   fill: var(--accent-cl);
+  
+}
+.clients-card:hover{
+  border: 1px solid var(--accent-cl);
 }
 .clients-list{
   display: flex;
