@@ -547,7 +547,7 @@ margin-bottom: 0;
   align-items: baseline;
 
 }
-.address link {
+.address-item a {
 display: block;
 }
 .logo-footer {
