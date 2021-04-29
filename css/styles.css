@@ -175,8 +175,8 @@ a span{
   max-width: 1600px;
   min-height: 600px;
   padding-top: 200px;
-padding-bottom: 200px;
-background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  padding-bottom: 200px;
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
   
   background-repeat: no-repeat;
   background-position: center;
@@ -203,7 +203,7 @@ text-transform: uppercase;
   background-color: var(--dark-bg);
   color: var(--alt-text-cl); 
 }
-.btn:hover,
+.filter .btn:hover,
 .btn:focus{
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);
@@ -215,6 +215,8 @@ border-radius: 4px;
 padding: 10px 32px;  
 min-width: 200px;
 min-height: 50px;
+background-color: var(--accent-cl);
+color: var(--alt-text-cl); 
       
 
     
@@ -349,6 +351,7 @@ margin-right: -30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
+  background-color:var(--main-bg);
 }
  
  .team-card {
@@ -397,7 +400,9 @@ letter-spacing: 0.03em;
   border-radius: 50%;
   background-color:var(--section-bg);
 }
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus
+ {
   background-color:var(--accent-cl);
  
 
@@ -408,7 +413,9 @@ letter-spacing: 0.03em;
   height: 20px;
   fill: var(--social-icons);
 }
-.social-icons-link:hover .social-icons-svg {
+.social-icons-link:hover .social-icons-svg
+.social-icons-link:focus .social-icons-svg
+ {
   fill: var(--alt-text-cl);
 }
 .clients {
@@ -485,8 +492,8 @@ border-radius: 4px;
 border: none;
 
 }
-.btn:hover,
-.btn:focus{
+.filter:hover,
+.filter:focus{
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -586,6 +593,7 @@ margin-right: 0;
 .link:focus {
  color: var(--accent-cl);
 }
+/*
 .dark-bg .btn{
   color: var(--main-text-cl);
   background-color: var(--main-bg);
@@ -594,7 +602,7 @@ margin-right: 0;
 .dark-bg .btn:focus{
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);  
-}
+}*/
 .footer-social-links {
  display: flex; 
 flex-direction: column;
@@ -627,7 +635,9 @@ margin-bottom: 20px;
   border-radius: 50%;
   background-color:rgba(255, 255, 255, 0.1);
 }
-.social-icons-link:hover {
+
+.social-icons-link:hover,
+.social-icons-link:focus {
   background-color:var(--accent-cl);
 }
 
@@ -636,7 +646,9 @@ margin-bottom: 20px;
   height: 20px;
   fill: var(--alt-text-cl);
 }
-.social-icons-link:hover .social-icons-svg {
+/*
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg{
   fill: var(--alt-text-cl);
 }
 /*
