@@ -398,7 +398,7 @@ letter-spacing: 0.03em;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color:var(--section-bg);
+  background-color:var(--main-bg);
 }
 .social-icons-link:hover,
 .social-icons-link:focus
@@ -413,7 +413,7 @@ letter-spacing: 0.03em;
   height: 20px;
   fill: var(--social-icons);
 }
-.social-icons-link:hover .social-icons-svg
+.social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg
  {
   fill: var(--alt-text-cl);
